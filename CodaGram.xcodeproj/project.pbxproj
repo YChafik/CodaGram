@@ -12,6 +12,7 @@
 		C2E5188A20924D1F00066D0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E5188820924D1F00066D0C /* Main.storyboard */; };
 		C2E5188C20924D2200066D0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E5188B20924D2200066D0C /* Assets.xcassets */; };
 		C2E5188F20924D2200066D0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E5188D20924D2200066D0C /* LaunchScreen.storyboard */; };
+		C2E5189720924F5A00066D0C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2E5189620924F5A00066D0C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C2E5188B20924D2200066D0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2E5188E20924D2200066D0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2E5189020924D2300066D0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2E5189620924F5A00066D0C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		C2E5188320924D1F00066D0C /* CodaGram */ = {
 			isa = PBXGroup;
 			children = (
+				C2E5189820924FAB00066D0C /* Plists */,
 				C2E5188420924D1F00066D0C /* AppDelegate.swift */,
 				C2E5188620924D1F00066D0C /* ViewController.swift */,
 				C2E5188820924D1F00066D0C /* Main.storyboard */,
 				C2E5188B20924D2200066D0C /* Assets.xcassets */,
 				C2E5188D20924D2200066D0C /* LaunchScreen.storyboard */,
-				C2E5189020924D2300066D0C /* Info.plist */,
 			);
 			path = CodaGram;
+			sourceTree = "<group>";
+		};
+		C2E5189820924FAB00066D0C /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				C2E5189020924D2300066D0C /* Info.plist */,
+				C2E5189620924F5A00066D0C /* GoogleService-Info.plist */,
+			);
+			path = Plists;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2E5188F20924D2200066D0C /* LaunchScreen.storyboard in Resources */,
+				C2E5189720924F5A00066D0C /* GoogleService-Info.plist in Resources */,
 				C2E5188C20924D2200066D0C /* Assets.xcassets in Resources */,
 				C2E5188A20924D1F00066D0C /* Main.storyboard in Resources */,
 			);
@@ -282,7 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TAF585SGHM;
-				INFOPLIST_FILE = CodaGram/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CodaGram/Plists/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TAF585SGHM;
-				INFOPLIST_FILE = CodaGram/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CodaGram/Plists/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
